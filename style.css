@@ -11,24 +11,14 @@ h1{
   margin: 0;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.dark {
-  background-color: #0f0f10
-}
-
 .firstBanner{
   background: rgb(238,238,238);
   background: linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(94,108,253,1) 100%);
   min-height: 45vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-shape-divider-top-1698207643 .shape-fill {
@@ -50,4 +40,17 @@ h1{
   display: block;
   width: calc(100% + 1.3px);
   height: 250px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.dark {
+  background-color: #0f0f10
 }
