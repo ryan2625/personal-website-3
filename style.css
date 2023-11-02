@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Raleway:wght@600&family=Saira+Condensed:wght@500&display=swap');
+
+body { 
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  background-color: #202731;
+}
+
+h1{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.dark {
+  background-color: #0f0f10
+}
+
+.firstBanner{
+  background: rgb(238,238,238);
+  background: linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(94,108,253,1) 100%);
+  min-height: 45vh;
+  position: relative;
+}
+
+.custom-shape-divider-top-1698207643 .shape-fill {
+  fill: #5E6CFD;
+}
+
+.custom-shape-divider-top-1698207643 {
+  position: absolute;
+  bottom: -250px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 10;
+}
+
+.custom-shape-divider-top-1698207643 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 250px;
+}
