@@ -40,6 +40,14 @@ a{
   text-align: center;
 }
 
+label{
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-wrap: nowrap;
+}
+
 a:hover{
   background-color: #f2f5fb;
   color: rgba(94,108,253,1);
@@ -265,13 +273,57 @@ a:hover{
 }
 
 .about-me{
-  min-height: 30vh;
   background-color: #111433;
   position: relative;
   margin-top: 300px;
   display: flex;
+  flex-wrap: wrap;
   color: #f2f5fb;
   justify-content: center;
+  font-family: 'Jost', sans-serif;
+  gap: 2rem;
+}
+
+.about-me > h1{
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about-desc {
+  display: flex;
+  flex: 0 0 40%;
+  max-width: 550px;
+  max-height: 495px !important;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: space-around;
+  flex-direction: column;
+  max-height: 550px;
+}
+
+.about-desc > p{
+  margin: 0;
+}
+
+.about-pic{
+  position: relative;
+}
+
+.transform-blob2{
+  position: absolute;
+  top: -15%;
+  left: 35%;
+  transform: scale(1.3) translateX(-50%);
+}
+
+.about-pic > img{
+  width: 100%;
+  max-width: 550px;
+  max-height: 550px;
+  margin-bottom: 10rem;
+  border-radius: 100px;
+  border: 2px solid white;
 }
 
 .footer{
@@ -334,7 +386,7 @@ a:hover{
 }
 
 #first-li{
-  width: 100px;
+  width: 50px;
   background-color:#f2f5fb;
   height: 5px;
   border-radius: 5px;
