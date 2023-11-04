@@ -4,10 +4,19 @@
 body { 
   margin: 0;
   font-family: 'Krona One', sans-serif;
-  color: #241f30;
+  color: #111433;
   background-color: #f2f5fb;
   letter-spacing: 1px;
   overflow-x: hidden;
+}
+
+
+ul{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0rem;
 }
 
 h1{
@@ -21,7 +30,7 @@ a{
   width: 125px;
   background-color: rgba(94,108,253,1);
   color: rgb(243, 243, 243);
-  border: white 2px solid;
+  border: #f2f5fb 2px solid;
   box-shadow: -5px -3px 10px 0px rgba(255, 255, 255, 0.6);
   cursor: pointer;
   font-size: 15px;
@@ -32,7 +41,7 @@ a{
 }
 
 a:hover{
-  background-color: white;
+  background-color: #f2f5fb;
   color: rgba(94,108,253,1);
   border: rgba(94,108,253,1) 2px solid;
   box-shadow: 5px 3px 10px 0px rgba(94,108,253,1);
@@ -83,7 +92,7 @@ a:hover{
 .divider{
   width: 90%;
   height: 6px;
-  background-color: #241f30;
+  background-color: #111433;
   position: absolute;
   border-radius: 5px;
   top: 50%;
@@ -157,7 +166,7 @@ a:hover{
   content: "";
   width: 100%;
   height: 3px;
-  background-color: #241f30;
+  background-color: #111433;
   border-radius: 5px;
   left: 0;
   top: 40px;
@@ -218,28 +227,93 @@ a:hover{
 .hidden{
   opacity: 0;
   transition: all 0.4s ease-in-out;
+  transform: translateY(30px);
 }
 
 .show{
   opacity: 1;
+  transform: translateY(0px);
 }
 
 .portfolio-divider{
   width: 50%;
   height: 10px;
-  background-color: #241f30;
+  background-color: #111433;
   border-radius: 5px;
   margin: 3rem;
   align-self: center;
 }
 
+.custom-shape-divider-bottom-1699105515 {
+  position: absolute;
+  top: -252px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1699105515 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 252px;
+}
+
+.custom-shape-divider-bottom-1699105515 .shape-fill {
+  fill: #111433;
+}
+
+.about-me{
+  min-height: 30vh;
+  background-color: #111433;
+  position: relative;
+  margin-top: 300px;
+  display: flex;
+  color: #f2f5fb;
+  justify-content: center;
+}
+
+.footer{
+  position: absolute;
+  bottom: 15px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.no-style{
+  padding: 0;
+  border-radius: 0;
+  width: auto;
+  background-color: transparent;
+  color: initial;
+  border: none;
+  box-shadow: none;
+  font-size: initial;
+  font-weight: normal;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  text-align: initial;
+}
+
+.no-style:hover{
+  background-color: initial;
+  color: initial;
+  border: initial;
+  box-shadow: none; 
+  transform: scale(1.3);
+  transition: all 0.4s ease-in-out;
+}
 
 #blob{
   position: absolute;
   right: -25%;
   top: -60%;
   transform: scale(.8) rotate(-30deg);
-  animation: bobbing 2s infinite;
+  animation: bobbing 3s infinite;
 }
 
 #blob2{
@@ -247,7 +321,7 @@ a:hover{
   right: 72%;
   bottom: -105%;
   transform: rotate(20deg);
-  animation: bobbing 2s infinite;
+  animation: bobbing 3s infinite;
 }
 
 #blob4{
@@ -256,7 +330,14 @@ a:hover{
   bottom: -100%;
   z-index: -1;
   transform: rotate(140deg);
-  animation: bobbing 2s infinite;
+  animation: bobbing 3s infinite;
+}
+
+#first-li{
+  width: 100px;
+  background-color:#f2f5fb;
+  height: 5px;
+  border-radius: 5px;
 }
 
 @keyframes bobbing {
@@ -264,6 +345,6 @@ a:hover{
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-14px);
   }
 }
