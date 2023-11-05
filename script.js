@@ -62,6 +62,6 @@ $(document).ready(function() {
     setTimeout(() => {
         $(".loading").addClass("none");
         console.log("hello");
-    }, 2500);
+    }, 2200);
 
   });
