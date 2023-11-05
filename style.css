@@ -86,7 +86,7 @@ a:hover{
   content: "";
   position: absolute;
   border-radius: 50%;
-  animation: pulsOut 1.55s ease-in-out infinite;
+  animation: pulsOut 1.45s ease-in-out infinite;
   filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.75));
 }
 .loader:before {
@@ -440,26 +440,42 @@ a:hover{
 
 #blob{
   position: absolute;
-  right: -15%;
-  top: -60%;
-  transform: scale(.8);
-  animation: bobbing 3s infinite;
+  right: -10%;
+  top: -25%;
+  width: 100px;
+  transform: rotate(45deg) !important;
+}
+
+#blob > img{
+  animation: bobbing1 3s infinite;
 }
 
 #blob2{
   position: absolute;
-  right: 72%;
-  bottom: -105%;
-  animation: bobbing 3s infinite;
+  right: 62%;
+  bottom: -65%;
+  animation: bobbing2 3s infinite;
 }
+
+#blob2 > img{
+  width: 100px;
+}
+
 
 #blob4{
   position: absolute;
-  left: 80%;
-  bottom: -109%;
+  left: 96%;
+  bottom: -49%;
   z-index: -1;
-  animation: bobbing 3s infinite;
+  transform: rotate(-15deg) !important;
 }
+
+#blob4 > img{
+  width: 120px;
+  animation: bobbing3 3s infinite;
+}
+
+
 
 #first-li{
   width: 50px;
@@ -468,12 +484,30 @@ a:hover{
   border-radius: 5px;
 }
 
-@keyframes bobbing {
+@keyframes bobbing1 {
+  0%, 100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+}
+
+@keyframes bobbing2 {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-16px);
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes bobbing3 {
+  0%, 100% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(3px, -11px);
   }
 }
 
@@ -509,26 +543,20 @@ a:hover{
 
   #blob{
     position: absolute;
-    right:-40%;
-    top: -40%;
+    right:-30%;
+    top: -70%;
     transform: scale(.8);
     animation: bobbing 3s infinite;
   }
   
   #blob2{
-    position: absolute;
-    right: 64%;
+    right: 74%;
     bottom: 15%;
-    animation: bobbing 3s infinite;
   }
   
   #blob4{
-    position: absolute;
-    left: 54%;
-    bottom: -59%;
-    z-index: -1;
-    transform: scale(.2);
-    animation: bobbing 3s infinite;
+    left: 106%;
+    bottom: -18%;
   }
 
   .transform-blob{
@@ -634,6 +662,16 @@ a:hover{
   .firstBanner{
     min-height: 55vh;
   }
+
+  #blob{
+    position: absolute;
+    right:-13%;
+  }
+
+  #blob4{
+    left: 95%;
+  
+  }
 }
 
 @media(max-width:740px){
@@ -660,26 +698,19 @@ a:hover{
 
   #blob{
     position: absolute;
-    right:-10%;
+    right:-5%;
     top: -40%;
     transform: scale(.8);
     animation: bobbing 3s infinite;
   }
   
   #blob2{
-    position: absolute;
-    right: 64%;
-    bottom: 15%;
-    animation: bobbing 3s infinite;
+    top: 39%;
+    right: 54%;
   }
   
   #blob4{
-    position: absolute;
-    left: 55%;
-    bottom: -57%;
-    z-index: -1;
-    transform: scale(.2);
-    animation: bobbing 3s infinite;
+    left: 77%;
   }
 
   .transform-blob{

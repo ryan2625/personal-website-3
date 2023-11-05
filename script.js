@@ -33,13 +33,17 @@ $(document).ready(function() {
 
     });
 
-    var img2 = $('<img>').attr('src', "./images/blobProp3.svg").attr('id', 'blob');
-    var img3 = $('<img>').attr('src', "./images/blobProp2.svg").attr('id', 'blob2');
-    var img4 = $('<img>').attr('src', "./images/blobProp4.svg").attr('id', 'blob4');
+    var img2 = $('<img>').attr('src', "./images/dumbbell.svg")
+    var img3 = $('<img>').attr('src', "./images/glove.svg")
+    var img4 = $('<img>').attr('src', "./images/car.svg")
 
-    $("#0").append(img2)
-    $("#1").append(img3)
-    $("#2").append(img4)
+    var div1 = $('<div>').attr('id', 'blob');
+    var div2 = $('<div>').attr('id', 'blob2');
+    var div3 = $('<div>').attr('id', 'blob4');
+
+    $("#0").append(div1.append(img2))
+    $("#1").append(div2.append(img3))
+    $("#2").append(div3.append(img4))
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -62,6 +66,6 @@ $(document).ready(function() {
     setTimeout(() => {
         $(".loading").addClass("none");
         console.log("hello");
-    }, 2200);
+    }, 2000);
 
   });
