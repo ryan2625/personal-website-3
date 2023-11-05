@@ -3,7 +3,7 @@ import { data } from "./data.js";
 $(document).ready(function() {
 
     data.forEach((element, index) => {
-        var img = $('<img>').attr('src', element.image)
+        var img = $('<img>').attr('src', element.image).attr("loading", "lazy")
         var individual = $('<div>').addClass('individual').addClass("hidden");
         var divider = $('<div>').addClass('portfolio-divider');
         var desc = $('<div>').addClass('descriptions');
@@ -56,4 +56,12 @@ $(document).ready(function() {
     hiddenElements.forEach(element => {
         observer.observe(element);
     });
+
+    const navElements = document.querySelectorAll(".observer");
+    
+    setTimeout(() => {
+        $(".loading").addClass("none");
+        console.log("hello");
+    }, 2500);
+
   });
