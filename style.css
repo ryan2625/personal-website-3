@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
 html{
-  overflow-x: hidden !important;
+  overflow: hidden;
 }
 
 body { 

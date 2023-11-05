@@ -66,6 +66,7 @@ $(document).ready(function() {
     setTimeout(() => {
         $(".loading").addClass("none");
         console.log("hello");
+        $("html").css("overflow-y", "scroll");
     }, 2000);
 
   });
