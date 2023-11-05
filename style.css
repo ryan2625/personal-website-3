@@ -708,3 +708,10 @@ a:hover{
     font-size: 12px;
   }
 }
+
+@media(max-width:400px){
+  label{
+    font-size: 10px;
+    font-weight: 900;
+  }
+}
