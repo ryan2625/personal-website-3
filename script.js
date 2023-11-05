@@ -12,8 +12,8 @@ $(document).ready(function() {
         var h2 = $('<h2>').text(element.tech);
         var p = $('<p>').text(element.description);
         var buttons = $('<div>').addClass('buttons');
-        var a1 = $('<a>').attr('href', element.link).text('Live App');
-        var a2 = $('<a>').attr('href', element.github).text('Github');
+        var a1 = $('<a>').attr('href', element.link).text('Live App').attr("target", "_blank");;
+        var a2 = $('<a>').attr('href', element.github).text('Github').attr("target", "_blank");
         individual.attr('id', index)
         individual.append(img)
         individual.append(desc)
