@@ -46,7 +46,7 @@ label{
   bottom: 8rem;
   left: 50%;
   transform: translateX(-50%);
-  text-wrap: nowrap;
+  text-wrap: nowrap !important;
 }
 
 a:hover{
